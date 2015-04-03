@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+</head>
+<body> 
+	<div class='title'>Stats Details</div>
+	<div class='info'>
+	 The well known "Pearson's chi-squared" method is used for roll analysis as described in this
+	  <a href='http://deltasdnd.blogspot.com/2009/02/testing-balanced-die.html'>blog post</a>, and 
+	 on <a href='https://en.wikipedia.org/wiki/Chi-square_test'>Wikipedia</a>. At this time it doesn't 
+	 get any more sophisticated.<p>
+	 The displayed values are:
+	 <dl>
+		 <dt>Fairness Bar</dt>
+		 <dd>This bar shows a rather arbitrary indication of how fair a dice is from "biased" (not fair) in red on the left to 
+		 "fair" (perfectly fair) in green on the right.</dd>
+		 <dt>Rolls</dt>
+		 <dd>Total number of rolls entered so far. The more rolls the more accurate the results.</dd>
+		 <dt>Sides</dt>
+		 <dd>The number of possible outcomes for each roll, eg. 6 for a 6 sided die.</dd>		 
+		 <dt>E</dt>
+		 <dd>The expected frequency for each outcome value with a uniform distribution. Simply the total rolls divided by sides.</dd>		 
+		 <dt>P</dt>
+		 <dd>The "significance" level used for the fairness calculation. This is the percent chance that a fair die would fail this test 
+		 (type 1 error, in stats talk). On the settings menu you can choose "confidence" 99%, 95%, 90% leading to values of 1%, 5%, 10% for P. 
+		 This selects scaling targets for the percent fairness calculation.</dd>		 
+		 <dt>SSE</dt>
+		 <dd>Sum Squared Error - a measure of how much rolls deviate from the expected frequency. Perfect, as expected, rolls would be 0, but as 
+		 rolls deviate from a uniform distribution, the higher this value goes. ie. Σ((actual - expected)^2)</dd>		 
+		 <dt>X<sup>2</sup></dt>
+		 <dd>This is SSE divided by E (expected frequency) and used as a measure of how well the rolls match the "fair die hypothesis" by comparing the value to a
+		  computed X<sup>2</sup> chi-squared table. The "fair die hypothesis" is when there is no statistically significant difference from a fair die.</dd>		 
+		 <dt>Fair</dt>
+		 <dd>A normalized percent fairness calculated based on X. Values above the "fair die hypothesis" are scaled to be below 35% (red bars), with
+		  "perfectly fair" at 100% (X = 0). In this scaling any value above 35% (yellow and green bars on chart) are considered
+		   "fair". 100% would be perfect but not something one would typically see in the real world.</dd>	 
+		 <dt>Roll Frequency</dt>
+		 <dd>A graphical summary of how many times each outcome has occurred.</dd>
+		 <dt>Consecutive Rolls</dt>
+		 <dd>Indicates when the same outcome happens consecutively. Not considered statistcially important but useful if you want to see 
+		 if some rolls seem to bunch up in runs, and makes for a fancier display.</dd> 
+	 </dl>
+	 </div>
+</body>
+</html>

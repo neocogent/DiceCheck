@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DiceCheck</string>
+    <string-array name="page_titles">
+        <item>Roll</item>
+        <item>Stats</item>
+        <item>Log</item>       
+    </string-array>    
+
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_help">Help</string>
+    <string name="label_sides">Sides</string>
+	<string name="label_rolls">Rolls</string>
+    <string name="norolls">0</string>
+    
+    <string name="dialog_save_dice_title">Save Dice As&#8230;</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_dice_tools_title">File Tools</string>
+    <string-array name="dice_tools">
+        <item>Rename</item>
+        <item>Merge</item>
+        <item>Delete</item>       
+    </string-array>
+    
+    <string name="settings_sound">Sound</string>
+    <string name="summary_sound">Select dice button sounds</string>
+    <string name="settings_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on dice button clicks</string>
+    <string name="settings_min_rolls">Minimum Rolls</string>
+    <string name="summary_min_rolls">Select minimum rolls to evaluate</string>
+    <string name="settings_confidence">Confidence Level</string>
+    <string name="summary_confidence">Select fairness significance level</string>
+    <string name="settings_special_dice">Dice Appearance</string>
+    <string name="summary_special_dice">Select how dice faces look</string>
+    <string name="settings_2sides">Heads/Tails</string>
+    <string name="summary_2sides">Use coin faces for 2 sides</string>
+    <string name="settings_6sides">Dots</string>
+    <string name="summary_6sides">Use dot faces for 6 sides</string>
+    <string name="settings_16sides">Hexadice</string>
+    <string name="summary_16sides">Use hexadecimal for 16 sides</string>
+
+    <string-array name="min_rolls_entries">
+        <item>5 Rolls/Side (poor)</item>
+        <item>10 Rolls/Side (good)</item>
+        <item>50 Rolls/Side (best)</item>
+    </string-array>
+    <string-array name="min_rolls_values">
+        <item>5</item>
+        <item>10</item>
+        <item>50</item>
+    </string-array>
+    <string name="min_rolls_default">10</string>
+
+    <string-array name="confidence_entries">
+        <item>90% (low)</item>
+        <item>95% (medium)</item>
+        <item>99% (high)</item>
+    </string-array>
+    <string-array name="confidence_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="confidence_default">1</string>
+
+    <string-array name="sound_entries">
+        <item>None</item>
+        <item>Click</item>
+        <item>Pop</item>
+        <item>Rattle</item>
+        <item>Water Drop</item>
+        <item>Clink</item>
+        <item>Rubber Duckie</item>        
+    </string-array>
+    <string-array name="sound_values">
+        <item>none</item>
+        <item>click</item>
+        <item>pop</item>
+        <item>rattle</item>
+        <item>drop</item>
+        <item>clink</item>
+        <item>duckie</item>        
+    </string-array>
+    <string name="sound_default">click</string>
+    
+    <string-array name="statFormats">
+        <item>Rolls %.0f</item>
+        <item>Sides %.0f</item>
+        <item>E %.1f</item>
+        <item>P %.2f</item>
+        <item>SSE %.0f</item>
+        <item>X² %.2f</item>
+        <item>Fair %.0f%%</item>
+    </string-array>
+    <string name="biased">BIASED</string>
+    <string name="fair">FAIR</string>
+    <string name="disabled">Need more rolls to evaluate</string>
+    <string name="nochartdata">No data to show</string>
+    <string name="rollfreq">Roll Frequency</string>
+    <string name="rollcons">Consecutive Rolls</string>
+    <string name="heads">HEADS</string>
+    <string name="tails">TAILS</string>
+       
+    <string name="err_invalid_name">Error: Invalid dice name</string>
+    <string name="err_load_dice">File error: cannot load dice</string>
+    <string name="msg_no_dice">No dice files found</string>
+    <string name="msg_dice_loaded">Dice state loaded</string>
+    <string name="err_save_dice">File error: cannot save dice</string>
+    <string name="msg_dice_saved">Dice state saved</string>
+     <string name="msg_dice_renamed">Dice renamed</string>
+    <string name="msg_dice_merged">Dice merged into active state</string>
+    <string name="msg_cannot_merge">Cannot merge, sides not equal</string>
+    <string name="err_merge_dice">File error: cannot merge dice</string>
+    <string name="msg_dice_deleted">Dice deleted</string>
+    <string name="err_read_dice">File error: cannot read dice</string>
+    <string name="dice_info_fmt1">%1$d sides, %2$d rolls, %3$d%% fair</string>
+    <string name="dice_info_fmt2">%1$d sides, %2$d rolls</string>  
+
+</resources>

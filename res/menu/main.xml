@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tkhaew.dicecheck.MainActivity" >
+	<item android:id="@+id/action_reset"
+    	android:icon="@drawable/ic_action_reset"
+        android:title="@string/action_reset"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/action_save"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+	<item android:id="@+id/action_help"
+	    android:orderInCategory="110"
+		android:title="@string/action_help"
+		app:showAsAction="never" />    
+</menu>

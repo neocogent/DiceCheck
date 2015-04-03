@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+	<ListPreference 
+	    android:key="prefMinRolls" 
+	    android:title="@string/settings_min_rolls" 
+	    android:summary="@string/summary_min_rolls"
+	    android:dialogTitle="@string/settings_min_rolls"
+        android:entries="@array/min_rolls_entries"
+        android:entryValues="@array/min_rolls_values"
+        android:defaultValue="@string/min_rolls_default"  />
+	
+	<ListPreference 
+	    android:key="prefConfidence" 
+	    android:title="@string/settings_confidence" 
+	    android:summary="@string/summary_confidence"
+        android:entries="@array/confidence_entries"
+        android:entryValues="@array/confidence_values"
+        android:defaultValue="@string/confidence_default" />
+	    
+	<PreferenceScreen
+	    android:key="button_special_dice_key"
+        android:title="@string/settings_special_dice"
+        android:summary="@string/summary_special_dice"
+        android:persistent="false">
+        
+	    <CheckBoxPreference
+            android:key="pref2sides"
+            android:title="@string/settings_2sides"
+            android:summary="@string/summary_2sides"
+            android:defaultValue="true" />
+	    <CheckBoxPreference
+            android:key="pref6sides"
+            android:title="@string/settings_6sides"
+            android:summary="@string/summary_6sides"
+            android:defaultValue="true" />
+	    <CheckBoxPreference
+            android:key="pref16sides"
+            android:title="@string/settings_16sides"
+            android:summary="@string/summary_16sides"
+            android:defaultValue="false" />
+	</PreferenceScreen>
+	
+	<ListPreference 
+	    android:key="prefSound" 
+	    android:title="@string/settings_sound" 
+	    android:summary="@string/summary_sound"
+	    android:entries="@array/sound_entries"
+        android:entryValues="@array/sound_values"
+        android:defaultValue="@string/sound_default"/>
+	<CheckBoxPreference
+            android:key="prefVibrate"
+            android:title="@string/settings_vibrate"
+            android:summary="@string/summary_vibrate"
+            android:defaultValue="false" />
+
+</PreferenceScreen>
