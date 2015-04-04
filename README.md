@@ -17,7 +17,17 @@ See my [blog entry](http://www.neocogent.com) for more background info and sampl
 
 This project was built using Eclipse with Android SDK installed as described on the Android Developers web site. 
 
-This git repo should be cloned under the workspace directory in that tree arrangement. Load up the Android IDE and build.
+This git repo should be cloned under the workspace directory in that tree arrangement. Load up the Android IDE and build. 
+
+This app can also be built from the command line as follows:
+
+- add correct Android sdk/tools to PATH 
+- you probably need to "android update project --path . --subprojects --target android-19" for this and the two subprojects (gridlayout_v7 and appcompat_v7_3) before starting. 
+- install ant if not already, eg. sudo apt-get install ant
+- make sure JAVA_HOME is set for correct jdk path, eg. "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386/" worked for me
+- change to workspace/DiceCheck directory
+- run "ant clean debug"
+
 
 I've included a final, signed apk file here as well for anyone who just wants to install without building.
 

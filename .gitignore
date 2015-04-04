@@ -1,2 +1,5 @@
 android.keystore
+local.properties
 artwork
+bin
+gen
