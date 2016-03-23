@@ -13,7 +13,7 @@ Basic usage: select number of sides on dice, tap buttons to enter values you rol
 - can log rolls to file for continuation later
 - can rename, merge, delete roll files
 
-See my [blog entry](http://www.neocogent.com) for more background info and sample screens.
+See my [blog entry](http://www.neocogent.com/blog/2015/04/dicecheck-release.html) for more background info and sample screens.
 
 This project was built using Eclipse with Android SDK installed as described on the Android Developers web site. 
 
